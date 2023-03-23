@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+* {
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Very-Light-Gray);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Violet);
+  text-transform: uppercase;
+}
+.blog_account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.view-plans {
+  padding: 6px 20px;
+  background-color: transparent;
+  border: 1px solid var(--Dark-Grayish-Violet);
+}
+.view-plans:last-child:hover {
+  background-color: var(--Very-Dark-Violet);
+  color: white;
+}
+.nav-item a:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+}
+/* --------------------------------------------------------------------------------------------- */
+
+header {
+  background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: repeat-y;
+  background-position: center right -50px;
+  background-size: contain;
+  display: flex;
+  background-color: var(--Dark-Violet);
+}
+
+.humanizing_insurance {
+  padding: 100px;
+  color: #fff;
+}
+.humanizing_insurance h1 {
+  font-size: 3.75em;
+  line-height: 0.8em;
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+  font-family: "DM Serif Display", serif;
+}
+.humanizing_insurance h1::before {
+  content: " ";
+  width: 180px;
+  height: 2px;
+  background-color: var(--Dark-Grayish-Violet);
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.humanizing_insurance p {
+  padding: 40px;
+  padding-left: 0px;
+}
+.humanizing_insurance a,
+.findout_more a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.humanizing_insurance a:hover {
+  background: #fff;
+  color: var(--Very-Dark-Violet);
+}
+header img {
+  height: 500px;
+  display: block;
+  opacity: 0.9;
+  position: relative;
+  top: 70px;
+  right: 100px;
+}
+.intro-left-desktop {
+  width: 8%;
+  position: relative;
+  top: -100px;
+}
+/* ---------------------------------We are Different----------------------------------------- */
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  position: relative;
+}
+h2::before {
+  content: " ";
+  width: 180px;
+  height: 2px;
+  background-color: var(--Dark-Grayish-Violet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+article img {
+  width: 40px;
+}
+article h3,
+article p {
+  padding: 10px;
+}
+.main_container article {
+  width: 90%;
+}
+.main_container {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* --------------------------------------------------------------------------------------------- */
+.findout_more {
+  background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right -20px top;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Very-Dark-Violet);
+  color: #fff;
+  padding: 30px;
+  margin: 0 100px;
+}
+.findout_more h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  width: 27%;
+}
+.findout_more a:hover {
+  background: #fff;
+  color: var(--Very-Dark-Violet);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+footer {
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-repeat: repeat-y;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--Dark-Grayish-Violet);
+}
+.social_media ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+.black:hover {
+  fill: #040404;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.insure_footer {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.insure_footer ul {
+  list-style: none;
+}
+.insure_footer ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--Very-Dark-Violet);
+}
+.insure_footer ul a:hover {
+  border-bottom: 1.5px solid var(--Dark-Grayish-Violet);
+}
+.light_color {
+  color: var(--Dark-Grayish-Violet) !important;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.light_color:hover {
+  border-bottom: 1.5px solid var(--Dark-Grayish-Violet);
+  cursor: pointer;
+}
+/* --------------------------------------------Hamburger Menu------------------------------ */
+
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #040404;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* --------------------------------------------------------------------------------------------- */

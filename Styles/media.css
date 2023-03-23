@@ -1,0 +1,138 @@
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom 270px;
+    background-size: 150px;
+  }
+
+  header img {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    opacity: 1;
+  }
+  .humanizing_insurance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+    background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom -120px;
+  }
+  .humanizing_insurance h1 {
+    width: 280px;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .humanizing_insurance p {
+    width: 350px;
+    margin-top: -12px;
+  }
+  .humanizing_insurance a {
+    width: 150px;
+  }
+
+  .navbar {
+    padding: 30px;
+  }
+
+  /* =========================Main Container Menu============================= */
+
+  h2 {
+    font-size: 2.7em;
+  }
+
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+  .main_container img {
+    width: 15%;
+  }
+  .findout_more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+  }
+  .findout_more {
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+  }
+
+  .findout_more h3 {
+    width: 200px;
+    text-align: center;
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .insure_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  /* =========================Mobile Hamburger Menu============================= */
+
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .hamburgerMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerMenu.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburgerMenu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: 100%;
+    top: 70px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    align-items: center;
+    background-color: var(--Very-Dark-Violet);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    z-index: 1;
+    background-image: url(../images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+  }
+  a {
+    margin: 4px 0;
+    color: white;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
